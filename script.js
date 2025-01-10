@@ -1,3 +1,5 @@
+
+// addEventListener to add a imation in cursor
 var crsr = document.querySelector("#cursor")
 var crsr_blur = document.querySelector("#cursor-blur")
 
@@ -8,10 +10,14 @@ document.addEventListener("mousemove", function(dets){
     crsr_blur.style.top = dets.y - 150+"px"
 })
 
+
+//gsap code to add animation on navbar when scoll the backgroung color to deep black or deep shades and nav size small
 gsap.to("#nav",{
     backgroundColor : "#000",
     height:"110px",
     duration:0.5,
+
+    //main code which action when scroll
     scrollTrigger:{
         trigger:"#nav",
         scroller:"body",
@@ -22,8 +28,10 @@ gsap.to("#nav",{
     }
 })
 
+//gasp code to add animations that when scroll fadded background color will appear appearing
 gsap.to("#main",{
     backgroundColor:"#000",
+    //main code which action when scroll
     scrollTrigger:{
         trigger:"#main",
         scroller:"body",

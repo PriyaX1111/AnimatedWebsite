@@ -9,6 +9,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    /* perspective: 800px; */
 }
 
 #cursor{
@@ -109,7 +110,7 @@ video{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -126,6 +127,8 @@ video{
     display: none;
 }
 
+
+/* animation in scroll in  */
 #scroller-in{
     display: inline-block;
     white-space: nowrap;
@@ -135,6 +138,8 @@ video{
     animation-iteration-count: infinite;
 }
 
+
+/* scroller/merque line css */
 #scroller h4{
     display: inline-block;
     font-size: 111px;
@@ -147,10 +152,13 @@ video{
     text-transform: uppercase;
 }
 
+/* scroller H4 hover css */
 #scroller h4:hover{
     color: #95C11E;
 }
 
+
+/* animation to scroll the text of marque line or scroller*/
 @keyframes scroll {
     from {
       transform: translateX(0);
@@ -160,6 +168,7 @@ video{
     }
   }
 
+  /* abouts us container */
   #about-us{
     height: 40vh;
     width: 100%;
@@ -171,6 +180,7 @@ video{
     justify-content: space-around;
   }
 
+  /* about us image css */
   #about-us img{
     height: 222px;
     width: 222px;
@@ -178,18 +188,113 @@ video{
     object-fit: cover;
   }
 
+  /* about us design content */
   #about-us-in{
     width: 50%;
     text-align: center;
   }
 
+  /* abouts us header design */
   #about-us-in h3{
     font-size: 44px;
     font-weight: 800;
     margin-bottom: 40px;
   }
 
+  /* abouts us paragraph design */
   #about-us-in p{
     font-size: 14px;
     line-height: 22px;
+  }
+
+  #cards-container{
+    /* background-color: red; */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .card{
+    height: 80%;
+    width: 22%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+  }
+
+  #card1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }
+
+  #card2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }
+
+  #card3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }
+
+  /* contains the cards hidden title and para details */
+  .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding: 30px;
+    padding-top: 111px;
+    opacity: 0;
+    transition: all ease 0.6s;
+  }
+
+  .overlay h4{
+    color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .overlay p{
+    color: #000;
+    font-size: 11px;
+  }
+
+  /* display cards hidden title and detail when hover  */
+  .card:hover .overlay{
+    opacity: 1;
+  }
+
+  /* titlede effect on cards */
+  .card:hover{
+    transform: rotate3d(-1,1,0,20deg);
+  }
+
+  #green-div{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom,#09ff00,#95C11E);
+  }
+
+  #green-div h4{
+    width: 44%;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  #green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 11%;
   }
