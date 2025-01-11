@@ -277,7 +277,7 @@ video{
   }
 
   #green-div{
-    height: 30vh;
+    height: 30vsh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -297,4 +297,103 @@ video{
     height: 100%;
     object-fit: cover;
     width: 11%;
+  }
+
+  #page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #page3>p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 55%;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  #page3 img{
+      position: absolute;
+      height: 60px;
+  }
+
+  #page3 #colon1{
+    left: 15%;
+    top: 25%;
+  }
+
+  #page3 #colon2{
+    right: 15%;
+    bottom: 25%;
+  }
+
+  #page4{
+    height: 30vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;;
+  }
+
+  .elem{
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .elem h2{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+  }
+
+  .elem:hover h2{
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .elem:hover img{
+    scale: 1;
+  }
+
+  #page4 h1{
+    font-size: 77px;
+    position: absolute;
+    top: -16%;
+    font-weight: 900;
+    color: #000;
+    font-family: "gilroy";
+    -webkit-text-stroke: 2px #fff;
+  }
+
+  footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom,#95C11E,#09ff00);
   }
